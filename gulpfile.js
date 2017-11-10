@@ -7,12 +7,12 @@ const connect = require('gulp-connect');
 gulp.task('clean', function(cb) {
   del(['css'], cb);
 });
-
+ 
 gulp.task('scss', function () {
   return gulp.src('./scss/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./css'))
-    .pipe(livereload());
+  .pipe(sass().on('error', sass.logError))
+  .pipe(gulp.dest('css'))
+  .pipe(livereload());
 });
 
 gulp.task('watch', function () {

@@ -14,14 +14,44 @@
   <link href="css/reset.css" rel="stylesheet" type="text/css">
   <link href="css/main.css" rel="stylesheet" type="text/css">
 
-  <script src="js/index.js"></script>
 </head>
 <body>
 
   <form>
-
+   <label for="acf_form_name">Name</label>
+   <input id="acf_form_name" name="name" type="text" placeholder="First & Middle">
+   <input id="acf_form_name" name="name" type="text" placeholder="Last">
+   <label for="acf_form_email">Choose your email</label>
+   <input id="acf_form_email" name="email" type="text" placeholder="@yourdomain.com">
+   <label for="acf_form_pwd">Create a password</label>
+   <input id="acf_form_pwd" name="password" type="password">
+   <label for="acf_form_confirm-pwd">Confirm your password</label>
+   <input id="acf_form_confirm-pwd" name="password" type="password">
+   <label for="acf_form_birth">Birthday</label>
+   <select id="acf_form_birth" name="months">
+     <option value="January">January</option>
+     <option value="February">February</option>
+     <option value="March">March</option>
+     <option value="April">April</option>          
+     <option value="May">May</option>
+     <option value="June">June</option>
+     <option value="July">July</option>
+     <option value="August">August</option>
+     <option value="September">September</option>
+     <option value="October">October</option>
+     <option value="November">November</option>          
+     <option value="December">Devember</option>
+   </select>
+   <input type="acf_form_birth" placeholder="Day">
+   <input type="acf_form_birth" placeholder="Year">
+   <button id="submit" value="nationalChekcs" ></button>
+      <input type="acf_form_birth" placeholder="">
+      <input type="checkbox" name="vehicle1" value="Agree Terms & Conditions">
   </form>
 
+
+
+  <script src="js/index.js"></script>
   <script>
       document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
         ':35729/livereload.js?snipver=1"></' + 'script>')
