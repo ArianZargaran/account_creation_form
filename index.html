@@ -17,38 +17,42 @@
 </head>
 <body>
 
-  <form>
-   <label for="acf_form_name">Name</label>
-   <input id="acf_form_name" name="name" type="text" placeholder="First & Middle">
-   <input id="acf_form_name" name="name" type="text" placeholder="Last">
-   <label for="acf_form_email">Choose your email</label>
-   <input id="acf_form_email" name="email" type="text" placeholder="@yourdomain.com">
-   <label for="acf_form_pwd">Create a password</label>
-   <input id="acf_form_pwd" name="password" type="password">
-   <label for="acf_form_confirm-pwd">Confirm your password</label>
-   <input id="acf_form_confirm-pwd" name="password" type="password">
-   <label for="acf_form_birth">Birthday</label>
-   <select id="acf_form_birth" name="months">
-     <option value="January">January</option>
-     <option value="February">February</option>
-     <option value="March">March</option>
-     <option value="April">April</option>          
-     <option value="May">May</option>
-     <option value="June">June</option>
-     <option value="July">July</option>
-     <option value="August">August</option>
-     <option value="September">September</option>
-     <option value="October">October</option>
-     <option value="November">November</option>          
-     <option value="December">Devember</option>
-   </select>
-   <input id ="acf_form_birth" type="number" name="quantity" min="1" max="31" placeholder="Day">
-   <input id ="acf_form_birth" type="number" name="quantity" min="1930" max="2017" placeholder="Years">
-      <button id="submit" value="Submit">Submit</button>
-
-      <input type="checkbox" name="terms" value="Agree Terms & Conditions"> I Agree to the terms and condicions
-  </form>
-
+  <form id="acf_form">
+      <label for="acf_form_name">Name</label>
+      <input id="acf_form_name" name="name" type="text" placeholder="First & Middle">
+      <input id="acf_form_name" name="name" type="text" placeholder="Last">
+      <label for="acf_form_email">Choose your email</label>
+      <input id="acf_form_email" name="email" type="text" placeholder="@yourdomain.com">
+      <label for="acf_form_pwd">Create a password</label>
+      <input id="acf_form_pwd" name="password" type="password">
+      <label for="acf_form_confirm-pwd">Confirm your password</label>
+      <input id="acf_form_confirm-pwd" name="password" type="password">
+    
+      <label for="acf_form_birth">Birthday</label>
+      <div>
+        <select id="acf_form_birth" name="months">
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>          
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="November">November</option>          
+        <option value="December">Devember</option>
+      </select>
+      <input id ="acf_form_birth" type="number" name="quantity" min="1" max="31" placeholder="Day">
+      <input id ="acf_form_birth" type="number" name="quantity" min="1930" max="2017" placeholder="Years">
+      </div>  
+          <button id="submit" value="Submit">Submit</button>
+    
+      <div>
+        <input type="checkbox" name="terms" value="Agree Terms & Conditions"><span>I Agree to the terms &amp condicions</span>
+      </div>
+      </form>
 
 
   <script src="js/index.js"></script>
