@@ -1,65 +1,42 @@
-<!Doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-    <!-- META Title & Description -->
-  <title>#</title>
-  <meta name="description" content="#">
-    <!-- META Viewport -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Favorite icon -->
-  <link rel="shortcut icon" href="#.ico">
-    <!-- Styles -->
-  <link href="css/reset.css" rel="stylesheet" type="text/css">
-  <link href="css/main.css" rel="stylesheet" type="text/css">
-
-</head>
-<body>
-
-  <form id="acf_form">
-      <label for="acf_form_name">Name</label>
-      <input id="acf_form_name" name="name" type="text" placeholder="First & Middle">
-      <input id="acf_form_name" name="name" type="text" placeholder="Last">
+<div class="container">
+  
+  <form class="acf_form" id="formTag" action="#">
+    
+    <h1>Create Account</h1>
+    
+    <div class="acf_form_section">
+      <label for="firstNameTag middleNameTag lastNameTag">Legal Name</label>
+      <input class="acf_form_first-name" id="firstNameTag" name="firstName" type="text" placeholder="First name">
+      <input class="acf_form_middle-name" id="middleNameTag" name="midleName" type="text" placeholder="Middle name">
+      <input class="acf_form_last-name" id="lastNameTag" name="lastName" type="text" placeholder="Last name">
+    </div>
+    
+    <div class="acf_form_section">
       <label for="acf_form_email">Choose your email</label>
-      <input id="acf_form_email" name="email" type="text" placeholder="@yourdomain.com">
+      <input class="acf_form_email" name="email" id="emailTag" type="text" placeholder="@yourdomain.com">
+    </div>
+    
+    <div class="acf_form_section">
       <label for="acf_form_pwd">Create a password</label>
-      <input id="acf_form_pwd" name="password" type="password">
+      <input class="acf_form_pwd" id="passTag" name="password" type="password">
       <label for="acf_form_confirm-pwd">Confirm your password</label>
-      <input id="acf_form_confirm-pwd" name="password" type="password">
+      <input class="acf_form_confirm-pwd" id="passConfirmTag" name="password" type="password">
+    </div>
+  
+    <div  class="acf_form_section">
+     <label for="acf_form_birth">Birthday</label>
+     <div class="acf_form_birth">
+       <input class="acf_form_birth-month" id="monthTag" type="number" name="monthBirth" min="1" max="12" placeholder="Month">
+       <input class="acf_form_birth-date" id="dayTag" type="number" name="dayBirth" min="1" max="31" placeholder="Day">
+       <input class="acf_form_birth-year" id="yearTag" type="number" name="yearBirth" min="1930" max="2017" placeholder="Year">
+     </div>
+    </div>
     
-      <label for="acf_form_birth">Birthday</label>
-      <div>
-        <select id="acf_form_birth" name="months">
-        <option value="January">January</option>
-        <option value="February">February</option>
-        <option value="March">March</option>
-        <option value="April">April</option>          
-        <option value="May">May</option>
-        <option value="June">June</option>
-        <option value="July">July</option>
-        <option value="August">August</option>
-        <option value="September">September</option>
-        <option value="October">October</option>
-        <option value="November">November</option>          
-        <option value="December">Devember</option>
-      </select>
-      <input id ="acf_form_birth" type="number" name="quantity" min="1" max="31" placeholder="Day">
-      <input id ="acf_form_birth" type="number" name="quantity" min="1930" max="2017" placeholder="Years">
-      </div>  
-          <button id="submit" value="Submit">Submit</button>
+    <div class="acf_form_terms">
+      <input class="acf_form_checkbox" id="checkboxTag" type="checkbox" name="terms" value="Agree Terms & Conditions" required><span>I Agree to the Terms and Conditions</span>
+    </div>  
     
-      <div>
-        <input type="checkbox" name="terms" value="Agree Terms & Conditions"><span>I Agree to the terms &amp condicions</span>
-      </div>
-      </form>
-
-
-  <script src="js/index.js"></script>
-  <script>
-      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
-        ':35729/livereload.js?snipver=1"></' + 'script>')
-  </script>
-
-</body>
-</html>
+    <button class="acf_submit">Submit</button>
+  </form>
+    
+   </div>
